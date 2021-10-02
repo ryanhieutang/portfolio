@@ -1,0 +1,72 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ryan Tang</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <script src="./main.js"></script>
+    <link rel="stylesheet" href="dist/magic-mouse.css" />
+</head>
+<body>
+    <div class="main-page">
+        <nav class="navbar">
+            <a href="index.html">
+                <img href="./index.html" src="./images/moon.png" alt="crescent" class="logo-image navtext">
+            </a>
+            <a class="navtext" href="./projects.html">projects</a>
+            <a class="navtext" href="./achievements.html" >achievements</a>
+            <a class="navtext" href="./activity.html">activity</a>
+        </nav>
+        <div data-aos="fade-up" class="hero-section">
+            <h1 class="name">ryanツ</h1>
+            <p class="personal-desc">full stack developer and graphic designer from down under 🦘 that makes innovative projects</p>
+            <div class="socials">
+                <a href="https://github.com/ryanhieutang" class="social-icons">
+                    <img src="./images/github.svg" alt="github"  >
+                </a>
+                <a href="https://twitter.com/devKenz0" class="social-icons">
+                    <img src="./images/twitter.svg" alt="twitter"  >
+                </a>
+                <a href="https://discord.gg/NNNYfZGn6P" class="social-icons">
+                    <img src="./images/discord.svg" alt="discord"  >
+                </a>
+                <a onclick="copyText()" class="social-icons">
+                    <img class="emailCopy" src="./images/email.svg" alt="email" >
+                </a>
+                <input type="text" value="ryanhieutang@gmail.com" id="emailInput">
+            </div>
+            <div class="status">
+                <img src="./images/ryangif.gif" class="pfp-gif" discord-pfp">
+                <div class="status-text">
+                    <div class="status-update">kenz0#4649</div>
+                    <div class="bottom-status">Available 9am - 12pm (AEST) 🕙</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        function copyText() {
+        /* Get the text field */
+        var copyText = document.getElementById("emailInput");
+
+        /* Select the text field */
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+        /* Copy the text inside the text field */
+        navigator.clipboard.writeText(copyText.value);
+        
+        /* Alert the copied text */
+        alert("Copied to clipboard");
+        }
+
+        
+
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init();</script>
+</body>
+</html>
