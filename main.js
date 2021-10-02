@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client({ intents: ["GUILDS", "GUILD_MESSAGES", "GUILD_PRESENCES"] });
 
-client.login('ODkzMzg0ODY3MjM1MTAyNzUx.YVarfg.722SSKcffrUFZmEovIpYBD5lWNQ')
+client.login('<MY_TOKEN>')
 
 client.on('presenceUpdate', (oldPresence, newPresence) => {
     let member = newPresence.member;
